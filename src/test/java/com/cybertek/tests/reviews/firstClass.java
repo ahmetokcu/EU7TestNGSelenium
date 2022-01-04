@@ -1,9 +1,7 @@
-package com.cybertek.tests;
+package com.cybertek.tests.reviews;
 
 import com.github.javafaker.CreditCardType;
 import com.github.javafaker.Faker;
-
-import java.sql.SQLOutput;
 
 public class firstClass {
 

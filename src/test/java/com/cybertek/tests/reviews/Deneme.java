@@ -1,6 +1,6 @@
 package com.cybertek.tests.reviews;
 
-import com.cybertek.utilities.WebDriverFactory;
+import com.cybertek.tests.utilities.WebDriverFactory;
 import org.openqa.selenium.*;
 
 public class Deneme {

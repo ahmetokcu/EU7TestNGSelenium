@@ -1,7 +1,7 @@
 package com.cybertek.tests.reviews.week2;
 
 
-import com.cybertek.utilities.WebDriverFactory;
+import com.cybertek.tests.utilities.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

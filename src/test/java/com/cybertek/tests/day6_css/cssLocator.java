@@ -1,6 +1,7 @@
 package com.cybertek.tests.day6_css;
 
-import com.cybertek.utilities.WebDriverFactory;
+
+import com.cybertek.tests.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

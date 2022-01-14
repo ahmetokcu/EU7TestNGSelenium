@@ -1,6 +1,5 @@
-package com.cybertek.tests;
+package com.cybertek.utilities;
 
-import com.cybertek.tests.utilities.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,6 +22,7 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         actions = new Actions(driver);
         wait = new WebDriverWait(driver, 10);
+        driver.get(ConfigurationReader.get("url"));
 
     }
 

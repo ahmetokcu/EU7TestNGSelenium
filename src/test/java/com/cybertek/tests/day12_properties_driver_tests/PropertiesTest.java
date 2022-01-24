@@ -1,7 +1,7 @@
 package com.cybertek.tests.day12_properties_driver_tests;
 
-import com.cybertek.utilities.ConfigurationReader;
-import com.cybertek.utilities.WebDriverFactory;
+import com.cybertek.tests.day10_file_upload.utilities.ConfigurationReader;
+import com.cybertek.tests.day10_file_upload.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

@@ -24,7 +24,7 @@ public class GetTitleAndUrl {
         
         String pageSource = driver.getPageSource();
 
-       // System.out.println("pageSource = " + pageSource);
+        //System.out.println("pageSource = " + pageSource);
 
     }
 }

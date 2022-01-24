@@ -1,6 +1,6 @@
 package com.cybertek.tests.day12_properties_driver_tests;
 
-import com.cybertek.utilities.Driver;
+import com.cybertek.tests.day10_file_upload.utilities.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 

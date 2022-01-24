@@ -1,4 +1,4 @@
-package com.cybertek.utilities;
+package com.cybertek.tests.day10_file_upload.utilities;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;

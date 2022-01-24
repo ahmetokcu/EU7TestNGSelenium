@@ -1,7 +1,7 @@
 package com.cybertek.pages;
 
 
-import com.cybertek.utilities.Driver;
+import com.cybertek.tests.day10_file_upload.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

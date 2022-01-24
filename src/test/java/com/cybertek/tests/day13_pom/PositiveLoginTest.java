@@ -1,8 +1,8 @@
 package com.cybertek.tests.day13_pom;
 
 import com.cybertek.pages.LoginPage;
-import com.cybertek.utilities.ConfigurationReader;
-import com.cybertek.utilities.TestBase;
+import com.cybertek.tests.day10_file_upload.utilities.ConfigurationReader;
+import com.cybertek.tests.day10_file_upload.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

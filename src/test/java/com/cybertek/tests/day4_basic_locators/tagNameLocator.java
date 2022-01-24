@@ -1,11 +1,11 @@
 package com.cybertek.tests.day4_basic_locators;
 
-import com.cybertek.utilities.WebDriverFactory;
+import com.cybertek.tests.day10_file_upload.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class tagNmaeLocator {
+public class tagNameLocator {
 
     public static void main(String[] args) throws InterruptedException {
 

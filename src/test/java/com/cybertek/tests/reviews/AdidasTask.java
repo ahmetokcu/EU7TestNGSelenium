@@ -1,6 +1,6 @@
 package com.cybertek.tests.reviews;
 
-import com.cybertek.utilities.WebDriverFactory;
+import com.cybertek.tests.day10_file_upload.utilities.WebDriverFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

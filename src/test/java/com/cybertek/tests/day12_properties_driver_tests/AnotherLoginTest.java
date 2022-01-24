@@ -1,7 +1,7 @@
 package com.cybertek.tests.day12_properties_driver_tests;
 
-import com.cybertek.utilities.TestBase;
-import com.cybertek.utilities.ConfigurationReader;
+import com.cybertek.tests.day10_file_upload.utilities.TestBase;
+import com.cybertek.tests.day10_file_upload.utilities.ConfigurationReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
@@ -18,6 +18,9 @@ public class AnotherLoginTest extends TestBase {
 
         driver.findElement(By.id("prependedInput")).sendKeys("User10");
         driver.findElement(By.id("prependedInput")).sendKeys("UserUser123" + Keys.ENTER);
+
+        driver.findElement(By.id("prependedInput2")).sendKeys("password123" + Keys.ENTER);
+
 
 
     }

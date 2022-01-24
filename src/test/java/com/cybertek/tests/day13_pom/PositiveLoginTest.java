@@ -16,7 +16,7 @@ public class PositiveLoginTest extends TestBase {
         String username = ConfigurationReader.get("driver_username");
         String password = ConfigurationReader.get("driver_password");
 
-        loginPage .usernameInput.sendKeys(username);
+        loginPage.usernameInput.sendKeys(username);
         loginPage.passwordInput.sendKeys(password);
         loginPage.loginBtn.click();
 
@@ -47,7 +47,7 @@ public class PositiveLoginTest extends TestBase {
 
         LoginPage loginPage = new LoginPage();
 
-        loginPage.loginAsStoreManager();
+        loginPage.loginAsDriver();
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://qa1.vytrack.com/");
 

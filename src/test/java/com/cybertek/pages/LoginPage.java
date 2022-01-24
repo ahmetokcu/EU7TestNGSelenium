@@ -13,10 +13,10 @@ public class LoginPage {
 
     public LoginPage(){
         PageFactory.initElements(Driver.get(), this);
-
     }
 
     //driver.findElement(By.id("prependedInput"));
+    //FindBy = or , FindBys = and
     @FindAll({
             @FindBy(id="prependedInput"),
             @FindBy(name="_username")
@@ -26,6 +26,7 @@ public class LoginPage {
     @FindBy(id="prependedInput2")
     public WebElement passwordInput;
 
+    //driver.findElement(By.id("_submit"));
     @FindBy(id="_submit")
     public WebElement loginBtn;
 
@@ -40,10 +41,10 @@ public class LoginPage {
        loginBtn.click();
 
     }
-    public void loginAsStoreManager(){
+    public void loginAsDriver(){
 
-        String username = ConfigurationReader.get("storemanager_username");
-        String password = ConfigurationReader.get("storemanager_password");
+        String username = ConfigurationReader.get("driver_username");
+        String password = ConfigurationReader.get("driver_password");
 
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);

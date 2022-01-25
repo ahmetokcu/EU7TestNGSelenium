@@ -1,6 +1,6 @@
 package com.cybertek.tests.day5_xpath;
 
-import com.cybertek.tests.day10_file_upload.utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

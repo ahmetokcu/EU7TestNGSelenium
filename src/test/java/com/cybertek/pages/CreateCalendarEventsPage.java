@@ -1,7 +1,7 @@
 package com.cybertek.pages;
 
 
-import com.cybertek.tests.day10_file_upload.utilities.Driver;
+import com.cybertek.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,10 +10,10 @@ import org.openqa.selenium.support.ui.Select;
 public class CreateCalendarEventsPage extends BasePage {
 
     public CreateCalendarEventsPage(){
-        PageFactory.initElements(Driver.get(), this);
+        PageFactory.initElements(Driver.get(),this);
     }
 
-    @FindBy(css = "[id^='recurrence-repeat-view']")
+    @FindBy(css = "[id^='recurrence-repeat-view263']")
     public WebElement repeat;
 
     @FindBy(css = "[id^='recurrence-repeats-view']")
@@ -27,6 +27,7 @@ public class CreateCalendarEventsPage extends BasePage {
 
     @FindBy(css = "[id^='date_selector_oro_calendar_event_form_start']")
     public WebElement startDate;
+
     @FindBy(css = "[id^='date_selector_oro_calendar_event_form_end']")
     public WebElement endDate;
 
@@ -56,7 +57,6 @@ public class CreateCalendarEventsPage extends BasePage {
     public Select repeatOptionsList(){
         return new Select(repeatOptions);
     }
-
 
 
 }

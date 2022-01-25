@@ -3,8 +3,8 @@ package com.cybertek.tests.day13_pom;
 import com.cybertek.pages.CalendarEventsPage;
 import com.cybertek.pages.DashboardPage;
 import com.cybertek.pages.LoginPage;
-import com.cybertek.tests.day10_file_upload.utilities.BrowserUtils;
-import com.cybertek.tests.day10_file_upload.utilities.TestBase;
+import com.cybertek.utilities.BrowserUtils;
+import com.cybertek.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,15 +12,14 @@ public class PageSubtitleTest extends TestBase {
 
     /**
      * Test case
-     * Open Browser
-     * Login as a driver
+     * Open Chrome browser
+     * Login as a Driver
      * Verify that page subtitle is Quick Launchpad
      * Go to Activities -> Calendar Events
-     * Verify that page subtitle is Calendar Events
+     * verify that page subtitle is Calendar Events
      */
-
     @Test
-    public void Test1(){
+    public void test1(){
 
         LoginPage loginPage = new LoginPage();
 
@@ -28,13 +27,13 @@ public class PageSubtitleTest extends TestBase {
 
         String expectedSubtitle = "Quick Launchpad";
 
-        DashboardPage dashboardpage = new DashboardPage();
+        DashboardPage dashboardPage = new DashboardPage();
 
-        String actualSubtitle = dashboardpage.getPageSubTitle();
+        String actualSubtitle = dashboardPage.getPageSubTitle();
 
-        Assert.assertEquals(actualSubtitle, expectedSubtitle,"Verify subtitle");
+        Assert.assertEquals(actualSubtitle,expectedSubtitle,"Verify subtitle");
 
-        dashboardpage.navigateToModule("Activities", "Calendar Events");
+        dashboardPage.navigateToModule("Activities","Calendar Events");
 
         CalendarEventsPage calendarEventsPage = new CalendarEventsPage();
 
@@ -42,11 +41,5 @@ public class PageSubtitleTest extends TestBase {
 
         Assert.assertEquals(calendarEventsPage.getPageSubTitle(),"Calendar Events","Verify subtitle Calendar Events");
 
-
-
     }
-
-
 }
-
-

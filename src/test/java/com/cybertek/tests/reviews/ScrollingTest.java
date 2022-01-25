@@ -1,6 +1,6 @@
 package com.cybertek.tests.reviews;
 
-import com.cybertek.tests.day10_file_upload.utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;

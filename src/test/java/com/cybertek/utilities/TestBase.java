@@ -1,4 +1,4 @@
-package com.cybertek.tests.day10_file_upload.utilities;
+package com.cybertek.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -8,28 +8,26 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
-import static java.lang.Thread.sleep;
-
 public class TestBase {
     protected WebDriver driver;
     protected Actions actions;
     protected WebDriverWait wait;
 
     @BeforeMethod
-    public void setUp() {
-        driver = Driver.get();
+    public void setUp(){
+        driver = Driver.get();   // statically calling object
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         actions = new Actions(driver);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver,10);
         driver.get(ConfigurationReader.get("url"));
 
     }
 
     @AfterMethod
     public void tearDown() throws InterruptedException {
-        sleep(2000);
+        Thread.sleep(2000);
         Driver.closeDriver();
-
+        //  driver.quit();  NEVER NEVER use this statement again
     }
 }

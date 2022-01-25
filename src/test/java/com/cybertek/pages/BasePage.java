@@ -1,7 +1,7 @@
 package com.cybertek.pages;
 
-import com.cybertek.tests.day10_file_upload.utilities.BrowserUtils;
-import com.cybertek.tests.day10_file_upload.utilities.Driver;
+import com.cybertek.utilities.BrowserUtils;
+import com.cybertek.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

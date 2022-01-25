@@ -1,6 +1,6 @@
 package com.cybertek.tests.day10_action_js;
 
-import com.cybertek.tests.day10_file_upload.utilities.WebDriverFactory;
+import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
